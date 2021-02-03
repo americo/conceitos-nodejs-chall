@@ -2,7 +2,7 @@ const request = require("supertest");
 const app = require("../app");
 const { validate: isUuid } = require("uuid");
 
-describe("Repositories", () => {
+describe("repositories", () => {
   it("should be able to create a new repository", async () => {
     const response = await request(app)
       .post("/repositories")
